@@ -25,7 +25,7 @@ You have one or more Linux Servers ready to manages the services above. This is 
 + Linux 5.15.0-113-generic x86_64 GNU/Linux
 + Ubuntu 22.04 (jammy)
   
-### 3. Setting Up Nginx Proxy Manager
+### 3. Install Nginx Proxy Manager
 
 1. [Install docker with apt](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
 2. Create a path to you docker compose file
@@ -59,10 +59,15 @@ You have one or more Linux Servers ready to manages the services above. This is 
     $ docker compose up -d
     $ docker ps
     CONTAINER ID   IMAGE                             COMMAND                  CREATED       STATUS      PORTS                                                                                  NAMES
-b70d0e161cb7   jc21/nginx-proxy-manager:latest   "/init"                  A second ago   Up 2 days   0.0.0.0:80-81->80-81/tcp, :::80-81->80-81/tcp, 0.0.0.0:443->443/tcp, :::443->443/tcp   nginx-proxy-manager
+    b70d0e161cb7   jc21/nginx-proxy-manager:latest   "/init"                  A second ago   Up 2 days   0.0.0.0:80-81->80-81/tcp, :::80-81->80-81/tcp, 0.0.0.0:443->443/tcp, :::443->443/tcp   nginx-proxy-manager
     ```
-    
+ 5. Log in an set a password
+    Open a browser and go to the following url
+    > http://\<your machine IP address\>:81
 
+### 4. Install Authelia
+
+1. 
    
 
 
